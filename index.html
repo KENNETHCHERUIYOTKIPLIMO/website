@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoArse.png" class="logo">
+                <ul>
+                    <li><a href="HOME.html">HOME</a></li>
+                    <li><a href="ABOUT US.html">ABOUT US</a></li>
+                    <li><a href="SERVICES.html">SERVICES</a></li>
+                    <li><a href="CONTACT US.html">CONTACT US</a></li>
+                    <li><a href="BLOG.html">BLOG</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    My ARSENAL websites ,, so interactive
+                    <h1>Hi <span>Gunners,,</span><br> It is for life</h1>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="about-col">
+                    <img src="images/ball.jpeg">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="text">About real football</h1>
+                    <p>Gunners club was formed in 1886 at Woolwich, 
+                        the city of London in United Kingdom, England. It has successfully managed to win different trophies including English Premier League title that has won 13 times including 2004 win that was unbeaten. 
+                        Its traditional rival is Totten ham Hotspur</p>
+                       <div class="title">
+                        <p class="tab-links active-links" onclick="opentab('players')">players</p>
+                        <p class="tab-links"  onclick="opentab('coaches')">coaches</p>
+                        <p class="tab-links"  onclick="opentab('Owners')">Owners</p>
+                       </div>
+                       <div class="tab-content active-tab" id="players">
+                        <ul>
+                            <li><span>Gunners</span><br>GUNNERS FOR LIFE </li>
+                            <li><span>Mikel Arteta</span><br>SUPER COACH </li>
+                            <li><span>Emirates</span><br>Emirates is my heaven </li>
+                        </ul>
+                       </div>
+                       <div class="tab-content" id="coaches">
+                        <ul>
+                            <li><span>Gunners</span><br>GUNNERS FOR LIFE </li>
+                            <li><span>Mikel Arteta</span><br>SUPER COACH </li>
+                            <li><span>Emirates</span><br>Emirates is my heaven </li>
+                        </ul>
+                       </div>
+                       <div class="tab-content" id="Owners">
+                        <ul>
+                            <li><span>Gunners</span><br>GUNNERS FOR LIFE </li>
+                            <li><span>Mikel Arteta</span><br>SUPER COACH </li>
+                            <li><span>Emirates</span><br>Emirates is my heaven </li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Arsenal services</h2>
+                    <p>Arsenal offers a services which includes sporting 
+                        training,cafeteria services etc</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Arsenal services</h2>
+                    <p>Arsenal offers a services which includes sporting 
+                        training,cafeteria services etc</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Arsenal services</h2>
+                    <p>Arsenal offers a services which includes sporting 
+                        training,cafeteria services etc</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = 
+        document.getElementsByClassName("tab-links");
+        var tabcontents = 
+        document.getElementsByClassName("tab-content");
+        function opentab(name){
+            for(tab-links of tab-links){
+              tab-links.classList.remove(" active-links");
+            }
+            for(tab-content of tab-content){
+              tabcontents.classList.remove(" active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(name).classList.add("active-tab");
+        }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>Our Team</titl></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="Aboutus">
+    <h1 class="heading">Our Team</h1>
+    <div class="image-container">
+        <div class="images" onclick="fetch_info(0)"><img src="images/Car2.jpeg" ></div>
+        <div class="images" onclick="fetch_info(1)"><img src="images/Car2.jpeg" ></div>
+        <div class="images" onclick="fetch_info(2)"><img src="images/Car2.jpeg" ></div>
+        <div class="images" onclick="fetch_info(3)"><img src="images/Car2.jpeg" ></div>
+        <div class="images" onclick="fetch_info(4)"><img src="images/Car2.jpeg" ></div>
+    </div>
+    <div class="info-container">
+        <img class= "profile" id="profile" src="images/cto.jpeg" >
+    <div class="info">
+        <h1 class="name" id="name">Mikel Arteta</h1>
+        <h3 class="status" id="status">Head coach</h3>
+        <p class="about" id="about">Mikel Arteta is 
+            the Head coach as well as serving as the 
+            manager at the mighty Arsenal cub</p>
+            <audio src="Aslay – Totoa.mp3"></audio>
+    </div>
+    <img class= "profile" id="profile" src="images/cto.jpeg" >
+    <div class="info">
+        <h1 class="name" id="name">Mikel Arteta</h1>
+        <h3 class="status" id="status">Head coach</h3>
+        <p class="about" id="about">Mikel Arteta is 
+            the Head coach as well as serving as the 
+            manager at the mighty Arsenal cub</p>
+    </div>
+    <img class= "profile" id="profile" src="images/cto.jpeg" >
+    <div class="info">
+        <h1 class="name" id="name">Mikel Arteta</h1>
+        <h3 class="status" id="status">Head coach</h3>
+        <p class="about" id="about">Mikel Arteta is 
+            the Head coach as well as serving as the 
+            manager at the mighty Arsenal cub</p>
+    </div>
+</div>
+    <script>
+        function fetch_info(){
+            let profile=["Car2.jpeg","Car2.jpeg","Car2.jpeg","Car2.jpeg","Car2.jpeg"];
+            let name=["Mikel Arteta","Mikel Arteta","Mikel Arteta"];
+            let status=["Head coach"];
+            document.getElementById("profile").src=profile[i];
+            document.getElementById("name").innerHTML=name[i];
+            document.getElementById("status").innerHTML=nstatus[i];
+            document.getElementById("about").innerHTML=about[i];
+        }
+    </script>
+    <p ><a href="BLOG.html">back</a></p>
+    <p ><a href="SERVICES.html">NEXT</a></p>
+</body>
+</html>
